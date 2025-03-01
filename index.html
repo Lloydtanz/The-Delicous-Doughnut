@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Donuts</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+      
+   
+</head>
+  <body>
+      <!-- Navbar -->
+    <nav class="navbar">
+      <a href="index.html">
+      <img src="logo.png" alt="Logo">
+      </a>
+        <ul class="nav-links">
+           <li><a href="#">Home</a></li>
+             <li class="dropdown">
+               <a href="#products" class="dropbtn">Our Donuts</a>
+                 <div class="dropdown-content">
+                <div class="menu-column">
+              <a href="flavor1.html" target="_blank"><img src="img1.png" alt=""> Bacon in the Sun</a>
+            <a href="flavor2.html" target="_blank"><img src="img2.png" alt=""> Beach ball</a>
+          <a href="flavor3.html"target="_blank"><img src="img3.png" alt=""> Chocolate Explosion</a>
+        </div>
+      <div class="menu-column">  
+        <a href="flavor4.html" target="_blank"><img src="img4.jpg" alt=""> Blueberry Lemonade</a>
+          <a href="flavor5.html" target="_blank"><img src="img5.png" alt=""> Blueberry Pancake</a>
+            <a href="flavor6.html" target="_blank"><img src="img6.png" alt=""> French toast</a>
+              </div>
+                 <div class="menu-column">
+              <a href="flavor7.html" target="_blank"><img src="img7.png" alt=""> Chocolate Strawberry</a>
+            <a href="flavor8.html" target="_blank"><img src="img8.png" alt=""> Chocolate with peanuts</a>
+          <a href="flavor9.html" target="_blank"><img src="img9.png" alt=""> Coconut Island</a>
+        <a href="ourdonuts.html" target="_blank">view all</a>
+      </div>
+        </div>
+          </li>
+             <li class="dropdown">
+              <a href="#special-offers" class="dropbtn">Drinks & Coffee </a>
+                <div class="dropdown-content">
+              <div class="menu-column">
+             <a href="drinks1.html" target="_blank"><img src="img10.jpg" alt=""> Aperol Sprits</a>
+          <a href="drinks2.html" target="_blank"><img src="img11.jpg" alt=""> Dirty Sherely</a>
+       <a href="drinks3.html" target="_blank"><img src="img12.jpg" alt=""> Pinaplle Margarita</a>
+      </div>
+        <div class="menu-column">
+          <a href="drinks4.html" target="_blank"><img src="img13.jpg" alt=""> Rum coke</a>
+            <a href="drinks5.html"target="_blank"><img src="img14.jpg" alt=""> Whiskey Ginger</a>
+              <a href="drinks6.html"target="_blank"><img src="img15.jpg" alt=""> Coffee Frappe</a>
+                </div>
+                  <div class="menu-column">
+                  <a href="drinks7.html"target="_blank"><img src="img16.jpg" alt="">Elixir Coffee</a>
+                <a href="drinks8.html"target="_blank"><img src="img17.jpg" alt=""> Milanese Hot Choco</a>
+              <a href="drinks9.html"target="_blank"><img src="img18.jpg" alt=""> Spiked Vodo Mocha</a>
+            <a href="#">view all</a>
+          </div>
+        </div>
+       </li>
+         <li><a href="#contact-us">Contact</a></li>
+           <li><a href="#about">About us</a></li>
+             </ul>
+               <button class="signup-btn" onclick="document.getElementById('signup-form').style.display='block'">Sign Up</button>
+                 </nav>
+              <!-- Navbar end here -->
+            <div id="signup-form" class="form-container" style="display: none;">
+          <h2>Register now</h2>
+        <p>Stay updated on our latest offers and news!</p>
+          <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+              <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Zip Code" required>
+                  <button>Sign Up</a></button>
+                    </div>
+                  <section id="about">
+                <div data-aos="slide-down">
+              <div class="section-box">
+            <div data-aos="zoom-in">
+          <div class="content-grid">
+        <div class="left-grid">
+          <h3 class="section-sub">About Us</h3>
+            <h2 class="section-title">Who We Are?</h2>
+              <p>
+                At Delicous Delight, we take pride in creating the most delicious, handcrafted donuts made with the finest ingredients.
+                  Our bakers are dedicated to delivering fresh, flavorful treats that cater to all taste preferences. Whether you love 
+                    classic glazed, rich chocolate, or something more adventurous, we have the perfect donut for you!
+                     </p>
+                  <button class="action-btn">Discover More</button>
+                </div>
+              <div class="right-grid">
+            <img src="hd.jpg" class="about-img" alt="Delicious Donuts">
+          </div>
+        </div>
+         </div>
+            </div>
+               </section>                                     
+                  <section id="products">
+                    <div data-aos="zoom-in">
+                  <div class="section-box">
+                <div class="content-grid">
+              <div class="right-grid">
+            <img src="section2.jpg" class="about-img" alt="Various Donut Flavors">
+          </div>
+        <div class="left-grid">
+          <h3 class="section-sub">Our Donuts</h3>
+            <h2 class="section-title">What We Offer?</h2>
+              <p>
+                  - Bacon in the sun: Maple Icing, Chopped Bacon, Salted Caramel Drizzle.<br>
+                - Beachball: Vanilla Icing, Rainbow Sprinkles, Chocolate Drizzle.<br>
+              - Chocolate Explosion: Chocolate Icing, OREO® Crumbles, Hot Fudge Drizzle .<br>
+            - Blueberry Lemonade: Blueberry Icing, Lemon Drizzle.<br>
+          - Blueberry Pancake: Blueberry Icing, Maple Drizzle, Powdered Sugar.
+        </p>
+          <a href="ourdonuts.html" target="_blank"><button class="action-btn">View More Flavors</button></a>
+            <button class="order-btn" onclick="confirmOrder()">Order Now</button>
+              </div>
+                </div>
+                   </div>
+                  </div>
+                </section>
+              <section id="special-offers">
+            <div data-aos="slide-up">
+          <div class="section-box">
+        <div class="content-grid">
+          <div class="left-grid">
+            <h3 class="section-sub">Drinks&Coffee</h3>
+              <h2 class="section-title">What We Offer?</h2>
+                <p>
+                  Enjoy our finest selection of beverages and delicious treats.<br>
+                    Whether you're craving a rich espresso, a refreshing iced latte,<br>
+                  or a perfectly brewed cup of coffee, we have something for everyone.<br>
+                Pair your drink with our freshly baked donuts and pastries for the ultimate indulgence.
+              </p>
+            <a href="#" target="_blank"><button class="action-btn">View More Flavors</button></a>
+          </div>
+        <div class="right-grid">
+          <img src="coffee-based-drinks.jpg" class="about-img" alt="Donut Special Offers">
+            </div>
+              </div>
+                </div>
+                  </div>
+                    </section>
+                  <section id="contact-us">
+                <div data-aos="zoom-out">
+              <div class="section-box">
+            <div class="content-wrap">
+          <h3 class="section-sub">Contact Us</h3>
+        <h2 class="section-title">Get In Touch</h2>
+          <p>Have a question or want to place an order? Reach out to us!</p>
+            <div class="contact-form">
+              <input type="text" class="input-1" placeholder="Your Name">
+                <input type="email" class="input-1" placeholder="Your Email">
+                  <input type="text" class="input-1" placeholder="Your Phone">
+                    <textarea class="input-1" placeholder="Your Message"></textarea>
+                  <button class="contact-btn">Send Message</button>
+                </div>
+              <div class="contact-details">
+            <p><strong>Phone:</strong> 09942213131</p>
+          <p><strong>Email:</strong> deliciousdelight@gmail.com</p>
+        <p><strong>Address:</strong> 1600 ICCT CAMPUS</p>
+          </div>
+            </div>
+              </div>
+                </section>
+                  </div>
+                </nav>
+              <footer>
+            <div class="footer-container">
+          <div class="footer-col">
+        <h4>Home</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+              <li><a href="#">About Us</a></li>
+                <li><a href="#">Menu</a></li>
+                  <li><a href="#">Careers</a></li>
+                </ul>
+              </div>
+            <div class="footer-col">
+          <h4>Drinks</h4>
+        <ul>
+          <li><a href="drinks1.html">Aperol Spirits</a></li>
+            <li><a href="drinks2.html">Dirty Sherly</a></li>
+              <li><a href="drinks3.html">Pineapple Margarita</a></li>
+                <li><a href="drinks4.html">Rum Coke</a></li>
+                  </ul>
+                </div>
+              <div class="footer-col">
+            <h4>Contact</h4>
+          <ul>
+        <li><a href="#">Customer Support</a></li>
+          <li><a href="#">FAQ</a></li>
+            <li><a href="#">Store Locator</a></li>
+              <li><a href="#">Feedback</a></li>
+                </ul>
+                  </div>
+                <div class="footer-col">
+              <h4>Follow Us</h4>
+            <ul class="social-links">
+          <li><a href="#"><img src="facebook-circle-logo-24.png" alt=""> Facebook</a></li>
+        <li><a href="#"><img src="instagram-alt-logo-24.png" alt=""> Instagram</a></li>
+          <li><a href="#"><img src="twitter-logo-24.png" alt=""> Twitter</a></li>
+            <li><a href="#"><img src="youtube-logo-24.png" alt=""> Youtube</a></li>
+              </ul>
+                </div>
+                  </div>
+                <div class="footer-bottom">
+              <p>&copy; 2025 Delicious Donuts. All Rights Reserved.</p>
+            </div>
+        <script>
+              document.addEventListener("DOMContentLoaded", function () {
+              const signupBtn = document.querySelector(".signup-btn");
+              const formContainer = document.getElementById("signup-form");
+    
+              signupBtn.addEventListener("click", function () {
+              formContainer.style.display = "block";
+    
+              // Reset form fields
+              const inputs = formContainer.querySelectorAll("input");
+              inputs.forEach(input => input.value = "");
+            });
+    
+              // Close form when clicking outside of it
+              window.addEventListener("click", function (event) {
+              if (event.target === formContainer) {
+              formContainer.style.display = "none";
+                }
+            });
+            });
+
+              function confirmOrder() {
+              let userConfirm = confirm("Do you want to proceed with your order?");
+              if (userConfirm) {
+              window.location.href = 'order.html';
+               }
+            }
+                        
+              document.addEventListener("DOMContentLoaded", function() {
+              let sections = document.querySelectorAll(".section-box");
+            
+              function revealSections() {
+              sections.forEach(section => {
+              let sectionTop = section.getBoundingClientRect().top;
+              let windowHeight = window.innerHeight;
+              if (sectionTop < windowHeight - 50) {
+              section.classList.add("show");
+                    }
+                });
+             }
+
+              window.addEventListener("scroll", revealSections);
+              revealSections();
+            });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+          duration: 1000,
+          once: true,
+      });
+  </script>
+    
+</body>
+</html>

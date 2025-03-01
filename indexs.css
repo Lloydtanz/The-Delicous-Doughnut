@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #FCEEF5; /* Soft pink background */
+  color: #4B2E2B; /* Deep brown for text */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E8C7C7; /* Soft blush pink */
+  padding: 10px 30px;
+  height: 100px;
+}
+
+.navbar img {
+  height: 130px;
+  width: auto;
+  max-width: 180px;
+  padding-left: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #4B2E2B;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  padding: 10px;
+  display: block;
+}
+
+.nav-links a:hover {
+  color: #D17B88; /* Slightly darker pink */
+}
+
+/* Buttons */
+.signup-btn, 
+.order-btn, 
+.action-btn, 
+.contact-btn {
+  background-color: #D17B88; /* Soft pink */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.signup-btn:hover, 
+.order-btn:hover, 
+.action-btn:hover, 
+.contact-btn:hover {
+  background-color: #C76474; /* Muted pink for hover */
+  transform: scale(1.05);
+}
+
+/* Forms */
+.form-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #4B2E2B;
+  margin: 20px auto;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 50px 20px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #D17B88;
+  border-radius: 5px;
+}
+
+.form-container button {
+  background-color: #D17B88;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.form-container button:hover {
+  background-color: #C76474;
+}
+
+/* Footer */
+footer {
+  background: #E8C7C7;
+  color: #4B2E2B;
+  padding: 19px 0;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #D17B88;
+  display: inline-block;
+}
+
+.footer-col ul li a {
+  color: #4B2E2B;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #C76474;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .content-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+}

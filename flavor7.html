@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Delicious Donuts</title>
+      <link rel="stylesheet" href="flavors.css">
+</head>
+<body>
+    <nav class="navbar">
+     <a href="index.html">
+      <img src="logo.png" alt="Logo">
+       </a>
+        <ul class="nav-links">
+         <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+           <a href="ourdonuts.html" class="dropbtn">Our Donuts</a>
+          <div class="dropdown-content">
+         <div class="menu-column">
+        <a href="flavor1.html" target="_blank"><img src="img1.png" alt=""> Bacon in the Sun</a>
+       <a href="flavor2.html" target="_blank"><img src="img2.png" alt=""> Beach Ball</a>
+      <a href="flavor3.html"target="_blank"><img src="img3.png" alt=""> Chocolate Explosion</a>
+     </div>
+    <div class="menu-column">
+     <a href="flavor4.html" target="_blank"><img src="img4.jpg" alt=""> Blueberry Lemonade</a>
+      <a href="flavor5.html" target="_blank" ><img src="img5.png" alt=""> Blueberry Pancake</a>
+       <a href="flavor6.html" target="_blank"><img src="img6.png" alt=""> French toast</a>
+        </div>
+         <div class="menu-column">
+          <a href="flavor7.html" target="_blank"><img src="img7.png" alt=""> Chocolate Strawberry</a>
+           <a href="flavor8.html" target="_blank"><img src="img8.png" alt=""> Chocolate with Peanuts</a>
+          <a href="flavor9.html" target="_blank"><img src="img9.png" alt=""> Coconut Island</a>
+         <a href="ourdonuts.html" target="_blank">view all</a>
+        </div>
+       </div>
+      </li>
+     <li class="dropdown">
+    <a href="#" class="dropbtn">Drinks & Coffee </a>
+     <div class="dropdown-content">
+      <div class="menu-column">
+       <a href="drinks1.html" target="_blank"><img src="img10.jpg" alt=""> Aperol Spirits</a>
+        <a href="drinks2.html" target="_blank"><img src="img11.jpg" alt=""> Dirty Sherely</a>
+         <a href="drinks3.html" target="_blank"><img src="img12.jpg" alt=""> Pinaplle Margarita</a>
+          </div>
+         <div class="menu-column">
+        <a href="drinks4.html" target="_blank"><img src="img13.jpg" alt="">Rum coke</a>
+       <a href="drinks5.html" target="_blank"><img src="img14.jpg" alt="">Whiskey Ginger</a>
+      <a href="drinks6.html" target="_blank"><img src="img15.jpg" alt="">Coffee Frappe</a>
+     </div>
+    <div class="menu-column">
+     <a href="drinks7.html" target="_blank"><img src="img16.jpg" alt=""> Elixir Coffee</a>
+      <a href="drinks8.html" target="_blank"><img src="img17.jpg" alt="">Milannese Hot Choco</a>
+       <a href="drinks9.html" target="_blank"><img src="img18.jpg" alt="">Spike Voodoo Mocha</a>
+        <a href="#">view all</a>
+         </div>
+          </div>
+           </li>
+          <li><a href="#">Contact</a></li>
+         <li><a href="#"target="_blank">About us</a></li>
+        </ul>
+       <button class="signup-btn" onclick="document.getElementById('signup-form').style.display='block'">Sign Up</button>
+      </nav>
+     <div class="head">
+    <img src="hd.jpg" alt="Bacon in the Sun Donut">
+    <div class="head-text">CHOCOLATE COVERED STRAWBERRY</div>
+</div>
+ <header class="hero">
+  <div class="hero-content">
+   <h1>Chocolate Covered Strawberry</h1>
+    <p>Enjoy the sweet flavor of strawberry icing finished with chocolate drizzle.</p>
+     <h1>Ingredients</h1>
+      <p>Strawberry Icing, Chocolate Drizzle</p>
+     <button class="order-btn" onclick="confirmOrder()">Order Now</button>
+    </div>
+       <div class="hero-image">
+      <img src="img7.png" alt="Delicious Donuts">
+     </div>
+    </header>
+     <!-- Footer -->
+      <footer>
+       <div class="footer-container">
+        <div class="footer-col">
+         <h4>Home</h4>
+          <ul>
+           <li><a href="index.html">Home</a></li>
+          <li><a href="#">About Us</a></li>
+         <li><a href="#">Menu</a></li>
+        <li><a href="#">Careers</a></li>
+       </ul>
+      </div>
+     <div class="footer-col">
+    <h4>Drinks</h4>
+     <ul>
+      <li><a href="drinks1.html">Aperol Spirits</a></li>
+       <li><a href="drinks2.html">Dirty Sherly</a></li>
+        <li><a href="drinks3.html">Pineapple Margarita</a></li>
+         <li><a href="drinks4.html">Rum Coke</a></li>
+          </ul>
+           </div>
+          <div class="footer-col">
+         <h4>Contact</h4>
+        <ul>
+       <li><a href="#">Customer Support</a></li>
+      <li><a href="#">FAQ</a></li>
+     <li><a href="#">Store Locator</a></li>
+    <li><a href="#">Feedback</a></li>
+     </ul>
+      </div>
+       <div class="footer-col">
+        <h4>Follow Us</h4>
+         <ul class="social-links">
+          <li><a href="#"><img src="facebook-circle-logo-24.png" alt=""> Facebook</a></li>
+           <li><a href="#"><img src="instagram-alt-logo-24.png" alt=""> Instagram</a></li>
+          <li><a href="#"><img src="twitter-logo-24.png" alt=""> Twitter</a></li>
+         <li><a href="#"><img src="youtube-logo-24.png" alt=""> Youtube</a></li>
+        </ul>
+       </div>
+      </div>
+     <div class="footer-bottom">
+    <p>&copy; 2025 Delicious Donuts. All Rights Reserved.</p>
+     </div>
+      <div id="signup-form" class="form-container" style="display: none;">
+       <h2>Register now</h2>
+        <p>Stay updated on our latest offers and news!</p>
+         <input type="text" placeholder="First Name" required>
+          <input type="text" placeholder="Last Name" required>
+           <input type="email" placeholder="Email" required>
+          <input type="text" placeholder="Zip Code" required>
+         <button><a href="singup.html" target="_blank">Sign Up</a></button>
+        </div>
+      <script>
+      function confirmOrder() {
+      let userConfirm = confirm("Do you want to proceed with your order?");
+      if (userConfirm) {
+      window.location.href = 'order.html';
+      }
+      }
+                        
+     </script>
+                    
